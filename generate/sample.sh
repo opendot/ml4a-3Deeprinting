@@ -17,5 +17,6 @@ if [ -z "$length" ]; then
     echo sample: specify the length of the file to generate
     exit 1
 fi
+image=$(cat image.conf)
 
-exec docker run --rm -it -v "$base_dir":/data crisbal/torch-rnn:base th sample.lua -checkpoint "/data/${base_name}-checkpoint_${checkpoint}.t7" -length "$length" -gpu -1
+exec docker run --rm -it -v "$base_dir":/data "$image" th sample.lua -checkpoint "/data/${base_name}-checkpoint_${checkpoint}.t7" -length "$length" -gpu -1
