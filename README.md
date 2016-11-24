@@ -1,11 +1,11 @@
 # 3Deeprinting 
 STL 3D models generator based on Recurring Neurla Network
 
-Following this example: 
+Following this example: <br>
 http://karpathy.github.io/2015/05/21/rnn-effectiveness/
         
 # Goals 
-The generator is feeded by a dataset of STL modelstranslated in ASCII using STLpython library. 
+The generator is feeded by a dataset of STL models translated in ASCII using STLpython library. 
 
 # Main steps 
 
