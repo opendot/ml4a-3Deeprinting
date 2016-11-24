@@ -30,3 +30,6 @@ genrator as
 where `3000` is the checkpoint that you want to use (meaning that
 `pot-checkpoint_3000.t7` must be present in `data` dir) and `20000` is the
 length of the file you want to generate.
+
+If you have a RAW model, instead, just replace `pot.raw` in place of `pot.stl`
+in all the above commands.
