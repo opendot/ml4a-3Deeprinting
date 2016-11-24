@@ -1,4 +1,4 @@
-# 3deeprinting - Filter
+# 3Deeprinting - Filter
 
 To convert between formats, first install `python-stl` as
 

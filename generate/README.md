@@ -1,4 +1,4 @@
-# 3deeprinting - Generate
+# 3Deeprinting - Generate
 
 First thing pick the image from
 
