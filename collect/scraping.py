@@ -1,6 +1,6 @@
 from lxml import html
 import requests
-import wget
+import os
 import time
 
 # starts here
@@ -40,4 +40,6 @@ if __name__ == '__main__':
                     fullDownloadURL = 'http://www.thingiverse.com/' + downloadURL
                     print '\t\t Download', fullDownloadURL
 
-                    wget.download(fullDownloadURL, 'data/' + downloadURL + '_' + str(time.time()) )
+                    fileName = 'data/' + downloadURL + '_' + str( int(time.time()) )
+                    os.system('wget -O ' + fileName + ' ' + fullDownloadURL)
+                    time.sleep(2)
