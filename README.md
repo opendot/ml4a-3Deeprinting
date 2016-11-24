@@ -1,6 +1,6 @@
 # 3deeprinting
 ML4A workshop rulez
-<h1><strong> 3Deeprinting</strong></h1>
+# 3Deeprinting 
         <h2>A lorem ipsum system using Recurring Neural Network to generate STL 3D models</h2>
         
         
