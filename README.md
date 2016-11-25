@@ -20,15 +20,13 @@ P.S.: We didn't really know what we were doing, and that was **awesome**
 
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
-### 
+### Ora et labora
 
-```
 Epoch 1/1
 1556664/1556664 [==========] - 3553s - loss: 1.5400 
 ----- diversity: 0.2
 ----- Generating with seed: "l paese di canaan, ma il possesso della "
 l paese di canaan, ma il possesso della mano di tale di noi di israele, come in questo comportare il signore dio, di acqua di giuda e di te in casa di israele, di contro di lui e la madre di sacchiera' alla terra di noi di in questo come un contro di te in questo contro di te in tutto il signore dio, che il signore dio e' in mezzo alla tua parola della costruzione del signore dio, che il signore disse a te in casa di sacchiera' a chi sa
-```
 
 ### It's narmal
 
