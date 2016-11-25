@@ -1,21 +1,24 @@
 # 3Deeprinting
 
-STL 3D models generator based on Recurrent Neurla Network
-
+3D models generator based on Recurrent Neural Network ([LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/))
 For more details see [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) blog post.
 
 ## Goals
 
-The generator is fed by a dataset of STL models translated in ASCII, or RAW
-format using [Python STL](http://python-stl.readthedocs.io/en/latest/) library.
+Generate new 3D models starting from already published ones.
+P.S.: We didn't really know what we were doing, and that was **awesome**
 
 ## Main steps
 
-- [collect](collect/) data scraping of STL format models / about 1000 3D models (keyword: Bottles);
-- [filter](filter/) and convert scraped STL into ASCII or RAW with the `stlfilter` library;
+- [collect](collect/) data scraping of STL models about pots and vases
+- [convert](filter/) STL from/to GCode and Raw
 - [generate](generate/) models, after training the generarive model.
 
 # The journey
+
+## The neural beast
+
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
 
 ### It's narmal
 
