@@ -14,3 +14,10 @@ format using [Python STL](http://python-stl.readthedocs.io/en/latest/) library.
 - [collect](collect/) data scraping of STL format models / about 1000 3D models (keyword: Bottles);
 - [filter](filter/) and convert scraped STL into ASCII or RAW with the `stlfilter` library;
 - [generate](generate/) models, after training the generarive model.
+
+## The journey
+
+![alt text](img/1.png)
+![alt text](img/2.png)
+![alt text](img/3.png)
+
