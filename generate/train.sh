@@ -6,7 +6,9 @@ if [ -z "$input" ]; then
     exit 1
 fi
 base_dir=$(realpath $(dirname "$input"))
-base_name=$(basename "$input" .stl)
+file_name=$(basename "$input")
+base_name=${file_name%%.*}
+extension=${file_name##*.}
 checkpoint_every="$2"
 if [ -z "$checkpoint_every" ]; then
     checkpoint_every=1000

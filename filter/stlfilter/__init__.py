@@ -12,7 +12,7 @@ def safe_makedirs(path, mode = 0700):
         if e.errno == EEXIST and isdir(path): pass
         else: raise RuntimeError( '{0} exists and is not a directory'.format(path))
 
-def process(input_dir, output_dir, callback, fnpattern = '*'):
+def process(input_dir, output_dir, callback, fnpattern = '*', **kwargs):
     base_dir = dirname(input_dir + sep)
     prefix_len = len(base_dir) + 1
     for dirpath, dirnames, filenames in walk(base_dir, topdown = False):
@@ -22,4 +22,4 @@ def process(input_dir, output_dir, callback, fnpattern = '*'):
                 dest_dir = join(output_dir, dirpath[prefix_len:])
                 safe_makedirs(dest_dir)
                 fq_out_path = join(dest_dir, path)
-                callback(fq_in_path, fq_out_path)
+                callback(fq_in_path, fq_out_path, **kwargs)

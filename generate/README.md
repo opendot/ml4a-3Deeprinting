@@ -1,13 +1,10 @@
-# 3deeprinting - Generate
+# 3Deeprinting - Generate
 
-First thing pick the image from
-
-    https://github.com/crisbal/docker-torch-rnn
-
-and write one of the stirng `crisbal/torch-rnn:base`,
-`crisbal/torch-rnn:cuda6.5`, or `crisbal/torch-rnn:cuda7.5`, according to the
-hardware and libs you have on your system, in the file named `image.conf` in
-this directory.
+First thing pick, according to the hardware and libs you have on your system,
+one of the Docker [Torch RNN images](https://github.com/crisbal/docker-torch-rnn)
+by writing one of the corresponding stirngs `crisbal/torch-rnn:base`,
+`crisbal/torch-rnn:cuda6.5`, or `crisbal/torch-rnn:cuda7.5` in the file named
+`image.conf` in this directory.
 
 Then, put an ASCII STL model in the `data` directory; assume it is named
 `pot.stl` first run the *preprocessing* as
@@ -30,3 +27,6 @@ genrator as
 where `3000` is the checkpoint that you want to use (meaning that
 `pot-checkpoint_3000.t7` must be present in `data` dir) and `20000` is the
 length of the file you want to generate.
+
+If you have a RAW model, instead, just replace `pot.raw` in place of `pot.stl`
+in all the above commands.

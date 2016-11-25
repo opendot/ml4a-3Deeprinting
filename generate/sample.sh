@@ -6,7 +6,9 @@ if [ -z "$input" ]; then
     exit 1
 fi
 base_dir=$(realpath $(dirname "$input"))
-base_name=$(basename "$input" .stl)
+file_name=$(basename "$input")
+base_name=${file_name%%.*}
+extension=${file_name##*.}
 checkpoint="$2"
 if [ -z "$checkpoint" ]; then
     echo sample: specify the checkpoint number

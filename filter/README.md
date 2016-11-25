@@ -1,4 +1,4 @@
-# 3deeprinting - Filter
+# 3Deeprinting - Filter
 
 To convert between formats, first install `python-stl` as
 
@@ -15,3 +15,8 @@ similarly, to convert a dir `from` containing a bunch of `.stl` files from STL
 binary or ASCII format to RAW format saving the results in a dir `to` just run
 
     python -m stlfilter.stl2raw -i from -o to
+
+Observe that since parsing of STL ASCII format is *very* slow, you can skip
+such files adding `-s` to the conversion options, as in
+
+    python -m stlfilter.stl2raw -si from -o to
